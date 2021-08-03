@@ -12,3 +12,4 @@ const fetchData = (url, cb) => {
     xhr.open("GET", url);
     xhr.send();
 }
+module.exports = fetchData
