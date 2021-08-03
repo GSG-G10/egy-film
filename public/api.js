@@ -1,6 +1,6 @@
 const fetchData = (url, cb) => {
     const xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
+    xhr.onreadystatechange = () => {
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
                 cb(JSON.parse(xhr.responseText));
