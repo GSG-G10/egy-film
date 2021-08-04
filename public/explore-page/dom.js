@@ -1,9 +1,9 @@
 const searchResultDiv = document.querySelector('.searchResult');
 
-const createResultedElement = (element, parent, className) => {
+const createResultedElement = (element, parent, classname) => {
   const item = document.createElement(element);
   parent.appendChild(item);
-  item.className = className;
+  item.className = classname;
   return item;
 };
 
