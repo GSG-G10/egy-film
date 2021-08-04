@@ -100,7 +100,7 @@
 
 .fa-search {
     position:absolute;
-    top: 50%;
+    top: 10%;
     transform: translateY(-50%);
     right: 25px;
     color: #fff;
