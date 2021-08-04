@@ -1,4 +1,4 @@
-const XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
+const { XMLHttpRequest } = require('xmlhttprequest');
 const env = require('env2')('.env');
 
 const xhr = new XMLHttpRequest();

@@ -36,11 +36,11 @@ const searchFromApi = (movie) => {
 
 
 try {
+    const env1 = process.env;
+const apiKey = env1.API_KEY;
+const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US`;
+fetchData(url, showResult);
     module.exports = fetchData;
 } catch (err) {
 
 }
-const env1 = process.env;
-const apiKey = env1.API_KEY;
-const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US`;
-fetchData(url, showResult);

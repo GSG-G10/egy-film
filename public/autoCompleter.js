@@ -1,13 +1,9 @@
+let moviesNames;
+
 const limit = 10;
 const resultsContainer = document.getElementById('suggestionsBar');
 
-const nameInput = (e) => {
-    while (resultsContainer.lastChild) resultsContainer.removeChild(resultsContainer.lastChild);
-
-    if (e.value.length > 0) search(e.value);
-};
-
-const search = (enteredName) => {
+const searchJson = (enteredName) => {
     if (!moviesNames) return;
     resultsContainer.classList.remove('none');
     const reg = new RegExp(`^${enteredName}`, 'i');
@@ -23,4 +19,10 @@ const search = (enteredName) => {
             count += 1;
         }
     }
+};
+
+const nameInput = (e) => {
+    while (resultsContainer.lastChild) resultsContainer.removeChild(resultsContainer.lastChild);
+
+    if (e.value.length > 0) searchJson(e.value);
 };

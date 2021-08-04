@@ -5,14 +5,14 @@ const {
     publicHandler,
     moviesNamesHandler,
     searchHandler,
-    exploreHandler
+    exploreHandler,
 } = require('./handlers');
 
 /** ***************************Code************************************ */
 const router = (request, response) => {
     const urlObj = url.parse(request.url);
     const endpoint = urlObj.pathname;
-    const method = request.method;
+    const { method } = request;
     const param = urlObj.query;
     if (endpoint === '/' && method === 'GET') {
         homeHandler(request, response);
