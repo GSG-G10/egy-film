@@ -27,13 +27,15 @@ Our website provides
 * Data about latest movies and it ratings
 * when searching for a film it will show you all the series of the film . 
 ## User Stories
-* The user can search movies by name.
-* the user can explore movies by click explore trending movies
+* The user can search movies by name .
+* the user can explore movies by click explore trending movies .
 * the user can find details about the movie and see the poster . 
 
 
 
 ## Installing the project locally:
+Open your cmd and execute : 
+
  ```git clone``` ```https://github.com/GSG-G10/egy-film.git```
 ```cd  egy-film```
 > ``` code . ```
