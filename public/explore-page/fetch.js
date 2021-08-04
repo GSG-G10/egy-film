@@ -1,15 +1,20 @@
 const fetchData = (url, cb) => {
-  const xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = () => {
-    if (xhr.readyState === 4) {
-      if (xhr.status === 200) {
-        cb(JSON.parse(xhr.responseText));
-      } else {
+    const xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = () => {
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                cb(JSON.parse(xhr.responseText));
+            } else {
+                cb(xhr.status);
+            }
+        }
         cb(xhr.status);
-      }
-    }
-  };
-  xhr.open('GET', url);
-  xhr.send();
+    };
+    xhr.open('GET', url);
+    xhr.send();
 };
-module.exports = fetchData;
+try {
+    module.exports = fetchData;
+} catch (err) {
+
+}
