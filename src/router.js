@@ -1,4 +1,4 @@
-const { homeHandler, errorHandler, publicHandler, moviesNamesHandler } = require('./handlers');
+const { homeHandler, errorHandler, publicHandler, moviesNamesHandler, exploreHandler } = require('./handlers');
 
 /** ***************************Code************************************ */
 const router = (request, response) => {
@@ -10,6 +10,9 @@ const router = (request, response) => {
         publicHandler(request, response);
     } else if (endpoint == '/movies-names' && method == 'GET') {
         moviesNamesHandler(request, response);
+    } else if (endpoint == '/explore-page/explore.html' && method == 'GET'){
+        exploreHandler(request, response)
+
     } else {
         errorHandler(request, response);
     }
