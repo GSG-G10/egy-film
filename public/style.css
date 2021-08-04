@@ -6,57 +6,66 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
 /* Nav Bar */
-.header-nav{
+
+.header-nav {
     height: 10vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #0F1219;
 }
-.logo{
-    color:#15C4B4; 
+
+.logo {
+    color: #15C4B4;
     font-size: 2.2rem;
-    font-family:'Palette Mosaic', cursive;
+    font-family: 'Palette Mosaic', cursive;
 }
-.nav-list{
-    max-width:45%;
+
+.nav-list {
+    max-width: 45%;
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-    
 }
-.nav-list a{
+
+.nav-list a {
     text-decoration: none;
     color: #fff;
 }
-.nav-list li{
-    font-size:1rem ;
-    padding: 1rem 0.7rem;
-    border-right:none ;
-    font-weight: bold;
 
+.nav-list li {
+    font-size: 1rem;
+    padding: 1rem 0.7rem;
+    border-right: none;
+    font-weight: bold;
 }
-.home{
+
+.home {
     border-bottom: 3px solid #15C4B4;
 }
-.trendings:hover{
+
+.trendings:hover {
     border-bottom: 3px solid #3ea397;
 }
-.news:hover{
+
+.news:hover {
     border-bottom: 3px solid #3ea397;
 }
 
 .signInBtn {
     width: 200px;
-     height: 50px;
-     display:flex;
-     justify-content: center;
+    height: 50px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-     cursor: pointer;
+    cursor: pointer;
 }
 
+
 /*landing page*/
+
 .landingPage {
     background: url("./images/landingPage.jpg") no-repeat center;
     width: 100%;
@@ -71,6 +80,10 @@
 .searchBox {
     width: 50%;
     position: relative;
+}
+
+#suggestionsBar {
+    color: white;
 }
 
 .searchBox input[type="text"] {
@@ -110,105 +123,109 @@
     /* IE 10+ */
     color: #fff;
 }
-.trendingBtn{
+
+.trendingBtn {
     width: 380px;
-  height: 86px;
-  margin-top: 2vh;
+    height: 86px;
+    margin-top: 2vh;
 }
 
-button, button::after {
-  font-size: 36px;
-  font-family: 'Bebas Neue', cursive;
-  background: linear-gradient(45deg, transparent 5%, #29616b 5%);
-  border: 0;
-  color: #fff;
-  letter-spacing: 3px;
-  line-height: 88px;
-  box-shadow: 6px 0px 0px #00E6F6;
-  outline: transparent;
-  position: relative;
-  cursor:alias;
+button,
+button::after {
+    font-size: 36px;
+    font-family: 'Bebas Neue', cursive;
+    background: linear-gradient(45deg, transparent 5%, #29616b 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 88px;
+    box-shadow: 6px 0px 0px #00E6F6;
+    outline: transparent;
+    position: relative;
+    cursor: alias;
 }
 
 button::after {
-  --slice-0: inset(50% 50% 50% 50%);
-  --slice-1: inset(80% -6px 0 0);
-  --slice-2: inset(50% -6px 30% 0);
-  --slice-3: inset(10% -6px 85% 0);
-  --slice-4: inset(40% -6px 43% 0);
-  --slice-5: inset(80% -6px 5% 0);
-  
-  content: 'AVAILABLE NOW';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #409bd8 5%);
-  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
-  clip-path: var(--slice-0);
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    content: 'AVAILABLE NOW';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #409bd8 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    clip-path: var(--slice-0);
 }
 
 button:hover::after {
-  animation: 1s glitch;
-  animation-timing-function: steps(2, end);
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
 }
 
 @keyframes glitch {
-  0% {
-    clip-path: var(--slice-1);
-    transform: translate(-20px, -10px);
-  }
-  10% {
-    clip-path: var(--slice-3);
-    transform: translate(10px, 10px);
-  }
-  20% {
-    clip-path: var(--slice-1);
-    transform: translate(-10px, 10px);
-  }
-  30% {
-    clip-path: var(--slice-3);
-    transform: translate(0px, 5px);
-  }
-  40% {
-    clip-path: var(--slice-2);
-    transform: translate(-5px, 0px);
-  }
-  50% {
-    clip-path: var(--slice-3);
-    transform: translate(5px, 0px);
-  }
-  60% {
-    clip-path: var(--slice-4);
-    transform: translate(5px, 10px);
-  }
-  70% {
-    clip-path: var(--slice-2);
-    transform: translate(-10px, 10px);
-  }
-  80% {
-    clip-path: var(--slice-5);
-    transform: translate(20px, -10px);
-  }
-  90% {
-    clip-path: var(--slice-1);
-    transform: translate(-10px, 0px);
-  }
-  100% {
-    clip-path: var(--slice-1);
-    transform: translate(0);
-  }
+    0% {
+        clip-path: var(--slice-1);
+        transform: translate(-20px, -10px);
+    }
+    10% {
+        clip-path: var(--slice-3);
+        transform: translate(10px, 10px);
+    }
+    20% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 10px);
+    }
+    30% {
+        clip-path: var(--slice-3);
+        transform: translate(0px, 5px);
+    }
+    40% {
+        clip-path: var(--slice-2);
+        transform: translate(-5px, 0px);
+    }
+    50% {
+        clip-path: var(--slice-3);
+        transform: translate(5px, 0px);
+    }
+    60% {
+        clip-path: var(--slice-4);
+        transform: translate(5px, 10px);
+    }
+    70% {
+        clip-path: var(--slice-2);
+        transform: translate(-10px, 10px);
+    }
+    80% {
+        clip-path: var(--slice-5);
+        transform: translate(20px, -10px);
+    }
+    90% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 0px);
+    }
+    100% {
+        clip-path: var(--slice-1);
+        transform: translate(0);
+    }
 }
 
+
 /* Search Result Section */
-main{
+
+main {
     background-color: #0F1219;
     width: 100%;
     padding: 3rem 0;
 }
-.searchResult{
+
+.searchResult {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -217,17 +234,20 @@ main{
     color: #fff;
     padding-left: 20rem;
 }
-.movieContainer{
+
+.movieContainer {
     width: 100%;
     display: flex;
 }
-.moviePoster{
+
+.moviePoster {
     width: 250px;
     height: 300px;
     padding-right: 3rem;
     padding-bottom: 2rem;
 }
-.overview{
+
+.overview {
     width: 60%;
     padding-top: 2rem;
 }

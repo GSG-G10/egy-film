@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./public/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="icon" href="https://www.shareicon.net/data/2015/09/01/94212_film_1000x1000.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Egy Film</title>
 </head>
@@ -18,24 +18,29 @@
     <nav class='header-nav'>
         <h1 class="logo">Egy Film </h1>
         <ul class='nav-list' id="nav-list">
-            <li>  <a href="#" class="home"> Home </a></li>
-            <li>  <a href="#" class="trendings"> Trendings </a></li>
-            <li>  <a href="#" class="news"> News</a></li>
+            <li> <a href="#" class="home"> Home </a></li>
+            <li> <a href="#" class="trendings"> Trendings </a></li>
+            <li> <a href="#" class="news"> News</a></li>
         </ul>
         <div class='btn'>
-            <button class="signInBtn">Sign In</button> 
+            <button class="signInBtn">Sign In</button>
         </div>
     </nav>
-    
+
     <!-- Landing Page Section -->
     <header class="landingPage">
         <div class="searchBox">
-            <input type="text" placeholder="what are you looking for?">
+            <input type="text" placeholder="what are you looking for?" oninput="nameInput(this)">
             <i class="fas fa-search"></i>
+            <div id="suggestionsBar"></div>
         </div>
         <button class="trendingBtn">Explore Trendings</button>
     </header>
-        <div class="searchResult"></div>
+    <div class="searchResult"></div>
+    </main>
+    <script src="./public/explore-page/fetch.js"></script>
+    <script src="./public/script.js"></script>
+    <script src="./public/autoCompleter.js"></script>
 </body>
 
 </html>
