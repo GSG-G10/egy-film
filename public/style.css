@@ -250,35 +250,47 @@ button:hover::after {
 
 main {
     background-color: #0F1219;
-    width: 100%;
-    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width:100%
 }
 
 .searchResult {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    flex-direction: column;
     color: #fff;
-    padding-left: 20rem;
 }
 
 .movieContainer {
-    width: 100%;
-    display: flex;
+    margin: 10px;
+    background-color: #1A2129;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
 }
 
 .moviePoster {
-    width: 250px;
-    height: 300px;
-    padding-right: 3rem;
-    padding-bottom: 2rem;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
 }
 
+.movieDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 250px;
+}
 .overview {
-    width: 60%;
     padding-top: 2rem;
+    height: 10px;
+    text-align: justify;
 }
 
 @media screen and (max-width: 425px) {
