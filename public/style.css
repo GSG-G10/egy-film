@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 * {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-
 
 /* Nav Bar */
 
@@ -20,7 +19,7 @@
 .logo {
     color: #15C4B4;
     font-size: 2.2rem;
-    font-family: 'Palette Mosaic', cursive;
+    font-family: 'Righteous', cursive;
 }
 .logo:hover {
     cursor: pointer;
@@ -45,7 +44,7 @@
     font-weight: bold;
 }
 
-.home {
+.active {
     border-bottom: 3px solid #15C4B4;
 }
 
@@ -57,24 +56,20 @@
     border-bottom: 3px solid #3ea397;
 }
 
-.signInBtn {
-    width: 200px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
+.trendingBtn {
+    display:flex;
+    justify-content:center;
     align-items: center;
-    cursor: pointer;
-}
-body{
-    background: url("./images/landingPage.jpg") no-repeat center;
-    height:90vh;
+    height: 50px;
+    padding: 0 1rem;
+    font-size: 22px;
 }
 
 /*landing page*/
 
 .landingPage {
-    width: 80%;
-    height: 100%;
+    background: url("./images/landingPage.jpg") no-repeat center;
+    height:90vh;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -84,36 +79,13 @@ body{
 
 .mainContainer{
     display:flex;
-    width: 80%;
+    width: 60%;
     height:50%;
-    justify-content:space-between ;
-    /* align-items: center; */
+    justify-content:center;
 }
 .searchBox {
     width: 60%;
     position: relative;
-    display:flex;
-    flex-direction: column;
-    
-}
-.trendingDev{
-    width: 10%;
-}
-.movieNameSugg{
-    border-bottom:1px solid #ffffff;
-    cursor: pointer;
-}
-
-#suggestionsBar {
-  color: #ffffff;  
-  display:flex;
-  border: 1px solid #ffffff;
-  border-top:none;
-  flex-direction: column;
-  width: 100%;
-}
-.none {
-    display:none;
 }
 
 .searchBox input[type="text"] {
@@ -153,13 +125,25 @@ body{
     /* IE 10+ */
     color: #fff;
 }
+/*auto complete*/
+.movieNameSugg{
+    border-bottom:1px solid #4ed2d6;
+    cursor: pointer;
+    margin: 0.5em;
+}
 
-.trendingBtn {
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    width: 350px;
-    height: 60px;
+#suggestionsBar {
+  color: #0d2f31;  
+  display:flex;
+  border: 1px solid #0d2f31;
+  border-top:none;
+  flex-direction: column;
+  width: 100%;
+  background-color:#ffffff;
+  border-radius: 10px;
+}
+.none {
+    display:none;
 }
 
 button,
@@ -256,8 +240,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    width:100%
 }
 
 .searchResult {

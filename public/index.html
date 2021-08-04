@@ -18,12 +18,12 @@
     <nav class='header-nav'>
         <h1 class="logo">Egy Film </h1>
         <ul class='nav-list' id="nav-list">
-            <li> <a href="#" class="home"> Home </a></li>
-            <li> <a href="#" class="trendings"> Trendings </a></li>
-            <li> <a href="#" class="news"> News</a></li>
+            <li> <a href="/" class="home active"> Home </a></li>
+            <li> <a href="./public/explore-page/explore.html" class="trendings"> Trending </a></li>
+            <li> <a href="#" class="news"> Movies</a></li>
         </ul>
         <div class='btn'>
-            <button class="signInBtn">Sign In</button>
+            <button class="trendingBtn" onclick="window.location.href='./public/explore-page/explore.html'">Explore Trendings</button>
         </div>
     </nav>
 
@@ -31,19 +31,17 @@
     <header class="landingPage">
         <div class="mainContainer">
             <div class="searchBox">
-                <input type="text" placeholder="looking for a movie ?" oninput="nameInput(this)" class="search-bar">
+                <input type="text" placeholder="looking for a movie ?" oninput="nameInput(this)" class="search-bar" id="searchBar">
                 <div id="suggestionsBar"></div> 
-            </div>
-            <div class="trendingDev">
-                <button class="trendingBtn" onclick="window.location.href='./explore-page/explore.html'">Explore Trendings</button>
             </div>
         </div>
     </header>
     <main>
-    <div class="searchResult"></div>
+        <div class="searchResult"></div>
     </main>
 
     <script src="./public/script.js"></script>
+    <script src="./public/explore-page/dom.js"></script>
     <script src="./public/explore-page/fetch.js"></script>
     <script src="./public/autoCompleter.js"></script>
 </body>
