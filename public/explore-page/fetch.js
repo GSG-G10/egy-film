@@ -7,8 +7,7 @@ const fetchData = (url, cb) => {
             } else {
                 cb(xhr.status);
             }
-        }
-        cb(xhr.status);
+        } else cb(xhr.status);
     };
     xhr.open('GET', url);
     xhr.send();
