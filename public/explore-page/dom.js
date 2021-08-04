@@ -27,7 +27,7 @@ const showResult = (data) => {
         realesedDate.innerText = result.release_date;
 
         const voteAverage = createResultedElement('p', movieDetails, 'itemData');
-        voteAverage.innterText = `${result.vote_average} /10`;
+        voteAverage.innterText = `rate: ${result.vote_average} /10`;
 
         const overview = createResultedElement('p', movieDetails, 'overview');
         const textLimit = 150;
