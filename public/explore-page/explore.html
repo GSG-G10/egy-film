@@ -6,18 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>explore movies</title>
     <link rel="icon" href="https://www.shareicon.net/data/2015/09/01/94212_film_1000x1000.png">
-    <link rel="stylesheet" href="./explore.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <header class="landingPage">
-        <h1 class="title">
-            Egy Films
-        </h1>
-        <div class="searchBox">
-            <input type="text" placeholder="what are you looking for?">
-            <i class="fas fa-search"></i>
+    <!--  Navigation section  -->
+    <nav class='header-nav'>
+        <h1 class="logo">Egy Film </h1>
+        <ul class='nav-list' id="nav-list">
+            <li>  <a href="#" class="home"> Home </a></li>
+            <li>  <a href="#" class="trendings"> Trendings </a></li>
+            <li>  <a href="#"> News</a></li>
+        </ul>
+        <div class='btn'>
+            <button class="signInBtn">Sign In</button> 
         </div>
-    </header>
-    <section></section>
+    </nav>
+    <main>
+    <section class="searchResult"></section> </main>
+    <!-- scripts -->
+    <script src="./dom.js"></script>
+    <script src="./fetch.js"></script>
 </body>
 </html>
