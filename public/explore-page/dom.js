@@ -41,7 +41,9 @@ const showResult = (data) => {
     }));
 };
 
-searchBar.addEventListener('keyup', (event) => {
-    const movieName = searchBar.value;
-    if (event.keyCode === 13 && movieName.length > 0) searchFromApi(movieName);
-});
+if (searchBar) {
+    searchBar.addEventListener('keyup', (event) => {
+        const movieName = searchBar.value;
+        if (event.keyCode === 13 && movieName.length > 0) searchFromApi(movieName);
+    });
+}

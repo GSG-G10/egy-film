@@ -5,7 +5,7 @@ const {
     publicHandler,
     moviesNamesHandler,
     searchHandler,
-    exploreHandler,
+    trendingHandler,
 } = require('./handlers');
 
 /** ***************************Code************************************ */
@@ -22,8 +22,8 @@ const router = (request, response) => {
         moviesNamesHandler(request, response);
     } else if (endpoint === '/movie-search' && method === 'GET') {
         searchHandler(request, response, param);
-    } else if (endpoint === '/explore-page/explore.html' && method === 'GET') {
-        exploreHandler(request, response);
+    } else if (endpoint === '/trending' && method === 'GET') {
+        trendingHandler(request, response);
     } else {
         errorHandler(request, response);
     }

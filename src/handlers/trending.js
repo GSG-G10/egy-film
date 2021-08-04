@@ -3,8 +3,8 @@ require('env2')('.env');
 
 const xhr = new XMLHttpRequest();
 
-const searchHandler = (req, res, movie) => {
-    const url = `https://api.themoviedb.org/3/search/movie?api_key=${process.env.API_KEY}&query=${movie}`;
+const trendingHandler = (req, res) => {
+    const url = `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.API_KEY}&language=en-US`;
     xhr.onreadystatechange = () => {
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
@@ -20,4 +20,4 @@ const searchHandler = (req, res, movie) => {
     xhr.send();
 };
 
-module.exports = searchHandler;
+module.exports = trendingHandler;

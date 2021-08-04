@@ -3,7 +3,7 @@ const errorHandler = require('./Error');
 const publicHandler = require('./Public');
 const moviesNamesHandler = require('./moviesNames');
 const searchHandler = require('./search');
-const exploreHandler = require('./explore');
+const trendingHandler = require('./trending');
 
 module.exports = {
     homeHandler,
@@ -11,5 +11,5 @@ module.exports = {
     publicHandler,
     moviesNamesHandler,
     searchHandler,
-    exploreHandler,
+    trendingHandler,
 };
