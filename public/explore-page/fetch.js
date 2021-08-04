@@ -26,6 +26,15 @@ document.onreadystatechange = () => {
     }
 };
 
+const searchFromApi = (movie) => {
+    fetchData(`/movie-search?${movie}`, (result) => {
+        if (Number.isInteger(result))
+            return;
+        showResult(result);
+    });
+};
+
+
 try {
     module.exports = fetchData;
 } catch (err) {

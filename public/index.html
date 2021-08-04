@@ -30,7 +30,7 @@
     <!-- Landing Page Section -->
     <header class="landingPage">
         <div class="searchBox">
-            <input type="text" placeholder="what are you looking for?" oninput="nameInput(this)">
+            <input type="text" placeholder="what are you looking for?" oninput="nameInput(this)" id="searchBar">
             <i class="fas fa-search"></i>
             <div id="suggestionsBar"></div>
         </div>
@@ -39,6 +39,7 @@
     <div class="searchResult"></div>
     </main>
     <script src="./public/script.js"></script>
+    <script src="./public/explore-page/dom.js"></script>
     <script src="./public/explore-page/fetch.js"></script>
     <script src="./public/autoCompleter.js"></script>
 </body>
