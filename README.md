@@ -6,9 +6,6 @@
 * [Mohammed Mansour](https://github.com/M7Mansour)
 * [Umar Salah](https://github.com/umarsalah)
 
-##  Site URL
- *
-
 
 ## Tech. used
 * [Git Work Flow]()
@@ -20,6 +17,13 @@
 * [Node js]()
 * [API]()
 * [Herouku]()
+
+## Work process
+- We start by choose the idea and deciding what api to use .
+- Open issues and organize files structure .
+- Work our issues, and worked reqiuered tasks as pair .
+- After that we merged our work together and see the final results
+- Then test our projrct . 
 
 ## Description
 Our website provides 
