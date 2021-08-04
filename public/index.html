@@ -28,16 +28,20 @@
     </nav>
 
     <!-- Landing Page Section -->
-    <header class="landingPage">
-        <div class="searchBox">
-            <input type="text" placeholder="what are you looking for?" oninput="nameInput(this)">
-            <i class="fas fa-search"></i>
-            <div id="suggestionsBar"></div>
+    <div class="landingPage">
+        <div class="mainContainer">
+            <div class="searchBox">
+                <input type="text" placeholder="looking for a movie ?" oninput="nameInput(this)">
+            </div>
+            <div class="trendingDev">
+                <button class="trendingBtn">Explore Trendings</button>
+            </div>
         </div>
-        <button class="trendingBtn">Explore Trendings</button>
-    </header>
-    <div class="searchResult"></div>
-    </main>
+        <div id="suggestionsBar">
+        </div>
+    </div>
+
+
     <script src="./public/script.js"></script>
     <script src="./public/explore-page/fetch.js"></script>
     <script src="./public/autoCompleter.js"></script>
