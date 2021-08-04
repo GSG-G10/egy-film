@@ -28,7 +28,16 @@ const showResult = (data) => {
     voteAverage.innterText = `${result.vote_average} /10`;
 
     const overview = createResultedElement('p', movieDetails, 'overview');
-    overview.innerText = result.overview;
+    const textLimit = 150;
+    const overviewText = result.overview;
+    if(overviewText.length > textLimit){
+      let firstSet = overviewText.substring(0, textLimit);
+      let secnondSet = overviewText.substring(textLimit, overviewText.length);
+      overview.innerText = `${firstSet}...`;
+    }
+    else{
+      overview.innerText = overviewText;
+    }
   }));
 };
 
