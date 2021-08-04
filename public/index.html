@@ -29,15 +29,21 @@
 
     <!-- Landing Page Section -->
     <header class="landingPage">
-        <div class="searchBox">
-            <input type="text" placeholder="what are you looking for?" oninput="nameInput(this)">
-            <i class="fas fa-search"></i>
-            <div id="suggestionsBar"></div>
+        <div class="mainContainer">
+            <div class="searchBox">
+                <input type="text" placeholder="looking for a movie ?" oninput="nameInput(this)">
+            </div>
+            <div class="trendingDev">
+                <button class="trendingBtn" onclick="window.location.href='./explore-page/explore.html'">Explore Trendings</button>
+            </div>
         </div>
-        <button class="trendingBtn" onclick="window.location.href='./explore-page/explore.html'">Explore Trendings</button>
+
+        <div id="suggestionsBar"></div>  
     </header>
+    <main>
     <div class="searchResult"></div>
     </main>
+
     <script src="./public/script.js"></script>
     <script src="./public/explore-page/fetch.js"></script>
     <script src="./public/autoCompleter.js"></script>
