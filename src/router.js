@@ -15,8 +15,7 @@ const router = (request, response) => {
     const param = urlObj.query;
     if (endpoint === '/' && method === 'GET') {
         homeHandler(request, response);
-    } else
-    if (endpoint.includes('public') && method === 'GET') {
+    } else if (endpoint.includes('public') && method === 'GET') {
         publicHandler(request, response);
     } else if (endpoint === '/movies-names' && method === 'GET') {
         moviesNamesHandler(request, response);

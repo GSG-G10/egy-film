@@ -62,14 +62,16 @@
     align-items: center;
     cursor: pointer;
 }
-
+body{
+    background: url("./images/landingPage.jpg") no-repeat center;
+    height:90vh;
+}
 
 /*landing page*/
 
 .landingPage {
-    background: url("./images/landingPage.jpg") no-repeat center;
-    width: 100%;
-    height: 90vh;
+    width: 80%;
+    height: 100%;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -77,13 +79,38 @@
     align-items: center;
 }
 
+.mainContainer{
+    display:flex;
+    width: 80%;
+    height:50%;
+    justify-content:space-between ;
+    align-items: center;
+}
 .searchBox {
-    width: 50%;
+    width: 60%;
     position: relative;
+    display:flex;
+    flex-direction: column;
+    
+}
+.trendingDev{
+    width: 10%;
+}
+.movieNameSugg{
+    border-bottom:1px solid #ffffff;
+    cursor: pointer;
 }
 
 #suggestionsBar {
-    color: white;
+  color: #ffffff;  
+  display:flex;
+  border: 1px solid #ffffff;
+  border-top:none;
+  flex-direction: column;
+  width: 40%;
+}
+.none {
+    display:none;
 }
 
 .searchBox input[type="text"] {
@@ -100,7 +127,7 @@
 }
 
 .fa-search {
-    position: absolute;
+    position:absolute;
     top: 50%;
     transform: translateY(-50%);
     right: 25px;
@@ -125,9 +152,11 @@
 }
 
 .trendingBtn {
-    width: 380px;
-    height: 86px;
-    margin-top: 2vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width: 350px;
+    height: 60px;
 }
 
 button,
@@ -221,35 +250,47 @@ button:hover::after {
 
 main {
     background-color: #0F1219;
-    width: 100%;
-    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width:100%
 }
 
 .searchResult {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    flex-direction: column;
     color: #fff;
-    padding-left: 20rem;
 }
 
 .movieContainer {
-    width: 100%;
-    display: flex;
+    margin: 10px;
+    background-color: #1A2129;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
 }
 
 .moviePoster {
-    width: 250px;
-    height: 300px;
-    padding-right: 3rem;
-    padding-bottom: 2rem;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
 }
 
+.movieDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 250px;
+}
 .overview {
-    width: 60%;
     padding-top: 2rem;
+    height: 10px;
+    text-align: justify;
 }
 
 @media screen and (max-width: 425px) {
