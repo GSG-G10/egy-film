@@ -19,11 +19,11 @@
         <h1 class="logo">Egy Film </h1>
         <ul class='nav-list' id="nav-list">
             <li> <a href="#" class="home"> Home </a></li>
-            <li> <a href="#" class="trendings"> Trendings </a></li>
-            <li> <a href="#" class="news"> News</a></li>
+            <li> <a href="#" class="trendings"> Movies </a></li>
+            <li> <a href="#" class="news"> Series</a></li>
         </ul>
         <div class='btn'>
-            <button class="signInBtn">Sign In</button>
+            <button class="trendingBtn" onclick="window.location.href='./public/explore-page/explore.html'">Explore Trendings</button>
         </div>
     </nav>
 
@@ -34,13 +34,7 @@
                 <input type="text" placeholder="looking for a movie ?" oninput="nameInput(this)" id="searchBar">
                 <div id="suggestionsBar"></div>
             </div>
-            <div class="trendingDev">
-                <button class="trendingBtn" onclick="window.location.href='./public/explore-page/explore.html'">Explore Trendings</button>
-            </div>
         </div>
-        <button class="trendingBtn " onclick="window.location.href='./explore-page/explore.html'">Explore Trendings</button>
-
-
     </header>
     <main>
         <div class="searchResult"></div>
