@@ -1,5 +1,4 @@
 let moviesNames;
-
 const limit = 10;
 const resultsContainer = document.getElementById('suggestionsBar');
 
@@ -17,6 +16,9 @@ const searchJson = (enteredName) => {
             movieItem.appendChild(nameText);
             resultsContainer.appendChild(movieItem);
             count += 1;
+            movieItem.addEventListener('click',()=>{
+              searchBar.value= nameText.textContent;
+            })
         }
     }
 };
