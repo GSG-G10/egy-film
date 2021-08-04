@@ -10,11 +10,11 @@ const createResultedElement = (element, parent, classname) => {
 // eslint-disable-next-line no-unused-vars
 const showResult = (data) => {
   // eslint-disable-next-line array-callback-return
-  data.map(((result) => {
+  data.results.map(((result) => {
     const moviecontainer = createResultedElement('div', searchResultDiv, 'movieContainer');
 
     const moviePoster = createResultedElement('img', moviecontainer, 'moviePoster');
-    moviePoster.src = result.poster_path;
+    moviePoster.src = `https://image.tmdb.org/t/p/w500/${result.poster_path}`
 
     const movieDetails = createResultedElement('div', moviecontainer, 'movieDetails');
 
@@ -31,3 +31,4 @@ const showResult = (data) => {
     overview.innerText = result.overview;
   }));
 };
+
