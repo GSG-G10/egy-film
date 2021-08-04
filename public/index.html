@@ -23,7 +23,7 @@
             <li> <a href="#" class="news"> Series</a></li>
         </ul>
         <div class='btn'>
-            <button class="trendingBtn" onclick="window.location.href='./explore-page/explore.html'">Explore Trendings</button>
+            <button class="trendingBtn" onclick="window.location.href='./public/explore-page/explore.html'">Explore Trendings</button>
         </div>
     </nav>
 
@@ -31,16 +31,17 @@
     <header class="landingPage">
         <div class="mainContainer">
             <div class="searchBox">
-                <input type="text" placeholder="looking for a movie ?" oninput="nameInput(this)">
-                <div id="suggestionsBar"></div> 
+                <input type="text" placeholder="looking for a movie ?" oninput="nameInput(this)" id="searchBar">
+                <div id="suggestionsBar"></div>
             </div>
         </div>
     </header>
     <main>
-    <div class="searchResult"></div>
+        <div class="searchResult"></div>
     </main>
 
     <script src="./public/script.js"></script>
+    <script src="./public/explore-page/dom.js"></script>
     <script src="./public/explore-page/fetch.js"></script>
     <script src="./public/autoCompleter.js"></script>
 </body>

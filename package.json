@@ -18,11 +18,14 @@
     },
     "homepage": "https://github.com/GSG-G10/egy-film#readme",
     "devDependencies": {
-        "env2": "^2.2.2",
         "eslint": "^7.32.0",
         "eslint-config-airbnb-base": "^14.2.1",
         "eslint-plugin-import": "^2.23.4",
         "jest": "^27.0.6",
         "supertest": "^6.1.4"
+    },
+    "dependencies": {
+        "env2": "^2.2.2",
+        "xmlhttprequest": "^1.8.0"
     }
 }

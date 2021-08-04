@@ -16,8 +16,7 @@ const fetchData = (url, cb) => {
 document.onreadystatechange = () => {
     if (document.readyState === 'complete') {
         fetchData('/movies-names', (data) => {
-            if (Number.isInteger(data))
-                moviesNames = JSON.parse(localStorage.getItem('moviesNames'));
+            if (Number.isInteger(data)) moviesNames = JSON.parse(localStorage.getItem('moviesNames'));
             else {
                 moviesNames = data;
                 localStorage.setItem('moviesNames', JSON.stringify(data));
@@ -26,12 +25,18 @@ document.onreadystatechange = () => {
     }
 };
 
-try {
-    module.exports = fetchData;
-} catch (err) {
+const searchFromApi = (movie) => {
+    fetchData(`/movie-search?${movie}`, (result) => {
+        if (Number.isInteger(result)) return;
+        showResult(result);
+    });
+};
 
-}
-const env1 = process.env
-const apiKey = env1.API_KEY;
-const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US`
-fetchData(url,showResult)
+const getTrending = () => {
+    fetchData('/trending', (result) => {
+        if (Number.isInteger(result)) return;
+        showResult(result);
+    });
+};
+
+if (document.title === 'explore movies') getTrending();
