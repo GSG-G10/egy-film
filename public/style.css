@@ -5,8 +5,77 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* Nav Bar */
+.header-nav{
+    padding: 0rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom: 1px solid #ECEEF2; */
+    background-color: #0F1219;
+}
+.logo{
+    color:#15C4B4; 
+    font-weight: bolder;
+    font-size: 2.2rem;
+    animation: logo 5s linear 0s infinite normal none;
+}
+.nav-list{
+    max-width:45%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    
+}
+.nav-list a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav-list li{
+    font-size:1rem ;
+    padding: 1rem 0.7rem;
+    /* border: 1px solid #ECEEF2; */
+    border-right:none ;
+    font-weight: bold;
+
+}
+.home{
+    border-bottom: 3px solid #15C4B4;
+}
+.nav-list :nth-child(2):hover{
+    border-bottom: 3px solid #3ea397;
+}
+.nav-list :nth-child(3):hover{
+    border-bottom: 3px solid #3ea397;
+}
+
+.btn{
+    max-width:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signInBtn{
+    padding: 50%;
+}
+.signInBtn {
+    padding: .5rem;
+    background-color: #13C5B1;
+    border: 2px solid #13C5B1;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.signInBtn:hover {
+    background-color: #3ea397;
+    border: 2px solid #3ea397;
+}
+
+/*landing page*/
 .landingPage {
-    background: url("./images/langingPage.jpg") no-repeat center;
+    background: url("./images/landingPage.jpg") no-repeat center;
     width: 100%;
     height: 100vh;
     background-size: cover;
