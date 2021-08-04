@@ -1,6 +1,6 @@
 const limit = 10;
 const resultsContainer = document.getElementById('suggestionsBar');
-
+const searchbar = document.querySelector('.search-bar')
 const nameInput = (e) => {
   while (resultsContainer.lastChild) resultsContainer.removeChild(resultsContainer.lastChild);
 
@@ -21,6 +21,9 @@ const search = (enteredName) => {
       movieItem.appendChild(nameText);
       resultsContainer.appendChild(movieItem);
       count += 1;
+      movieItem.addEventListener('click',()=>{
+        searchbar.value= nameText.textContent
+      })
     }
   }
 };
