@@ -67,12 +67,44 @@
     border-radius: 10px;
     font-size: 18px;
     text-align: center;
-    color: #fff;
+    color: #DAF7FA;
     cursor: pointer;
 }
 
 .trendingBtn:hover {
     background-color: #3ea397;
+    border: 2px solid #3ea397;
+}
+
+/* Search Result Section */
+main{
+    background-color: #0F1219;
+    width: 100%;
+    min-height: 100vh;
+    padding: 3rem 0;
+}
+.searchResult{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: #fff;
+    padding-left: 20rem;
+}
+.movieContainer{
+    width: 100%;
+    display: flex;
+}
+.moviePoster{
+    width: 250px;
+    height: 300px;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+}
+.overview{
+    width: 60%;
+    padding-top: 2rem;
 }
 
 @media screen and (max-width: 425px) {
