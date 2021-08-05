@@ -11,6 +11,8 @@ Our website provides
  * Two pages one for the trending films now and search box to search for any movie you want to see . 
 * Data about latest movies and it ratings
 * when searching for a film it will show you all the series of the film . 
+## Site URL
+https://egy-film.herokuapp.com/
 
 ## User Stories
 * The user can search movies by name .
