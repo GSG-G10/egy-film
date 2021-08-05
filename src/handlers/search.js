@@ -1,5 +1,4 @@
 const { XMLHttpRequest } = require('xmlhttprequest');
-require('env2')('.env');
 
 const xhr = new XMLHttpRequest();
 
