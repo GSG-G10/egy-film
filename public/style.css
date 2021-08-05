@@ -84,7 +84,7 @@
     justify-content:center;
 }
 .searchBox {
-    width: 60%;
+    width: 85%;
     position: relative;
 }
 
@@ -103,7 +103,7 @@
 
 .fa-search {
     position:absolute;
-    top: 10%;
+    top: 7.5%;
     transform: translateY(-50%);
     right: 25px;
     color: #fff;
